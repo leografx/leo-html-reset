@@ -9,7 +9,7 @@
 <body>
  <section> 
     <header>
-           <h1>HTML <span> &lt;RESET /&gt;</span></h1>  
+           <h1>HTML <span> &lt;RESET/&gt;</span></h1>  
         <p>A CSS reset CSS rules that counteract the default styles applied by web browsers. </p>
     </header>
 
@@ -233,20 +233,81 @@
             <div>
                 <h3>Example</h3>
                 <form action="/submit-data" method="post">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                <div>
+                    <fieldset>
+                        <legend>&lt;legend&gt;</legend>
+                            <h2>&lt;fieldset&gt;</h2>
+                            <textarea>&lt;textarea&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt itaque dolores exercitationem odit quidem numquam blanditiis quod ipsum nulla, in similique quisquam fugit ad atque ex cum nihil. Similique.</textarea>        
+                    <p><br></p>
+                        </fieldset>
                     <br>
-                    <input type="submit" value="Login">
-                </div>
+                    <fieldset>
+                        <legend>Login</legend>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="<input type=text>" required>
+                    
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="<input type=password>" required>
+                        <p><br></p>
+                    
+                    </fieldset>
+                    <div>
+                        <br>
+                        <input type="submit" value="Login">
+                    </div>
                 </form>
                 
             </div>
         </article>
+
         <br>
+
+        <article>
+            <h2>&lt;button&gt;</h2>
+            <button>Button</button>
+        </article>
+
+        <article>
+            <h2>&lt;select&gt;</h2>
+            <select>
+                <optgroup label="Web">
+                    <option>HTML</option>
+                    <option>Javascript</option>
+                    <option>CSS</option>
+                </optgroup>
+                <optgroup label="Desktop">
+                    <option>C#</option>
+                    <option>Swift</option>
+                    <option>C++</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option>Java</option>
+                    <option>Swift</option>
+                </optgroup>
+            </select>
+        </article>
+    </main>
+
+    <main>
+        <article>
+            <h2>&lt;address&gt;</h2>
+            <p>The &lt;address&gt; tag is a semantic HTML element used to define contact information for the author or owner of a document or an article. This element can contain various types of details, such as physical address, phone number, email address, social media links, etc. It's important to note that while the &lt;address&gt; tag can represent physical addresses, it's not limited to that and can be used for other forms of contact information.</p>
+            <div>
+                <br>
+                <h3>Example</h3>
+                <address>
+                    Written by John Doe.<br>
+                    Visit us at:<br>
+                    Example Inc.<br>
+                    1234 Elm Street<br>
+                    Some City, Country 123456<br>
+                    Email: <a href="mailto:john@example.com">john@example.com</a><br>
+                    Call: <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </address>
+                
+            </div>
+        
+        </article>
+        <p><br></p>
     </main>
 
 </section>
@@ -256,7 +317,7 @@
 
 
 <!-- Text Content -->
-<address>&lt;address&gt;</address>
+
 
 <abbr>&lt;abbr&gt;</abbr>
 <cite>&lt;cite&gt;</cite>
@@ -273,10 +334,8 @@
 <var>&lt;var&gt;</var>
 
 <!-- Forms and Input -->
-<form>&lt;form&gt;</form>
-<input type="text" value="&lt;input&gt;">
-<label>&lt;label&gt;</label>
-<textarea>&lt;textarea&gt;</textarea>
+
+
 <button>&lt;button&gt;</button>
 <select>&lt;select&gt;</select>
 <optgroup>&lt;optgroup&gt;</optgroup>

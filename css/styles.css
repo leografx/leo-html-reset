@@ -182,7 +182,7 @@ blockquote footer a:hover{
     color:var(--accent);
 }
 
-form input {
+form input, textarea {
     padding-left: 1rem;
     padding-right: 1rem;
     width:100%;
@@ -200,11 +200,80 @@ form label {
     margin:1rem 0px .5rem;
 }
 
-form input[type=submit], button {
+form input[type=submit] {
     width: initial;
     color:var(--text-light);
     background: var(--primary);
     cursor: pointer;
     padding:.3rem 1.3rem;
+    border-style: solid;
+    outline-style: none;
+    outline: none;
+    border-width: 0px;
 
+}
+
+button {
+    color:var(--text-light);
+    background: var(--primary);
+    font-size: .9rem;
+    padding:.7rem 1.3rem;
+    border-style: solid;
+    outline-style: none;
+    outline: none;
+    border-width: 0px;
+}
+
+button:hover{
+    font-size: .9rem;
+    padding:.7rem 1.3rem;
+    background: var(--accent);
+    color:var(--body-text);
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    width: initial;
+    color:var(--body-text);
+    background: var(--accent);
+    cursor: pointer;
+    padding:.3rem 1.3rem;
+
+}
+
+textarea {
+    width:inital;
+    font-size: 1rem;
+    padding-top: 1rem;
+    line-height: 1.3rem;
+    min-height: 6rem;
+}
+
+fieldset {
+    padding:0px 1.5rem;
+    border-color: var(--light-grey);
+    border-width: 1px;
+}
+
+legend {
+    font-size: 1.3rem;
+    text-align: right;
+    padding:0px 1rem;
+    color:var(--primary);
+}
+
+address a{
+    color:var(--primary);
+}
+
+address {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+select {
+    width:100%;
+    padding: .7rem;
+    border-color: var(--light-grey);
+    background-color:#fff;
 }
