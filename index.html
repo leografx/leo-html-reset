@@ -9,14 +9,14 @@
 <body>
  <section> 
     <header>
-           <h1>HTML <span> &lt;RESET/&gt;</span></h1>  
-        <p>A CSS reset CSS rules that counteract the default styles applied by web browsers. </p>
+        <main>
+               <h1>HTML <span> &lt;RESET/&gt;</span></h1>  
+            <p>A CSS reset CSS rules that counteract the default styles applied by web browsers. </p>
+        </main>
     </header>
 
     <main>
         <article>
-            <h2>Structure</h2>
-            <!-- Structure -->
             <article>
 
                     <h2>&lt;article&gt;</h2>
@@ -237,8 +237,42 @@
                         <legend>&lt;legend&gt;</legend>
                             <h2>&lt;fieldset&gt;</h2>
                             <textarea>&lt;textarea&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nesciunt itaque dolores exercitationem odit quidem numquam blanditiis quod ipsum nulla, in similique quisquam fugit ad atque ex cum nihil. Similique.</textarea>        
-                    <p><br></p>
-                        </fieldset>
+                        <p><br></p>
+
+                        <h2>&lt;input [type=checkbox]&gt;</h2>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="optionA" value="A" >
+                                Option A 
+                            </label>
+                            <label>
+                                <input type="checkbox" name="optionB" value="B" >
+                                Option B
+                            </label>
+                            <label>
+                                <input type="checkbox" name="optionC" value="C" disabled>
+                                Option C (Disabled)
+                            </label>
+                            <p><br></p>
+                        </div>
+
+                        <h2>&lt;input [type=radio]&gt;</h2>
+                        <div>
+                            <label>
+                                <input type="radio" name="option" value="A" >
+                                Option A 
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="B" >
+                                Option B
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="C" disabled>
+                                Option C (Disabled)
+                            </label>
+                            <p><br></p>
+                        </div>
+                    </fieldset>
                     <br>
                     <fieldset>
                         <legend>Login</legend>
@@ -383,27 +417,106 @@
         </div>
     </main>
 
+    <main>
+        <article>
+            <h2>&lt;menu&gt;</h2>
+            <p>The &lt;menu&gt; tag in HTML is used to represent a menu of user commands. However, it's worth noting that the usage and support of this tag have evolved and changed over different HTML versions.</p>
+        </article>
+        <div>
+            <p><br></p>
+            <h3>Example</h3>
+
+            <div>
+                <menu>
+                    <menuitem> View Image</menuitem>
+                    <menuitem>Download Image</menuitem>
+                    <menuitem>Share Image</menuitem>
+                </menu>
+                
+            </div>
+            
+            
+        </div>
+    </main>
+
+    <main>
+        <article>
+            <h2>&lt;a&gt;</h2>
+            <p>The &lt;a&gt; tag, commonly referred to as the "anchor" tag, is a fundamental HTML element used to define hyperlinks. It allows users to navigate from one page or resource to another, making it a cornerstone of the web's interconnected nature.</p>
+        </article>
+        <div>
+            <p><br></p>
+            <h3>Example</h3>
+            <a>Anchor Link</a>
+        </div>
+    </main>
+
+    <main>
+        <article>
+            <h2>&lt;data&gt;</h2>
+            <p>The &lt;data&gt; tag in HTML5 is designed to associate a content piece with a machine-readable translation or value. It's useful when you want to provide a human-readable version of a value while also making a machine-readable version available for scripts or other processing.</p>
+        
+        <div>
+            <p><br></p>
+            <h3>Example</h3>
+            <data value="#ff0000">Red</data>
+            <data value="#00ff00">Green</data>
+            <data value="#0000ff">Blue</data>
+
+        </div>
+        </article>
+    </main>
+
+    <main>
+        <article>
+            <h2>&lt;dialog&gt;</h2>
+            <p>The &lt;dialog&gt; tag in HTML5 is used to create a popup dialog box or a modal. Modals are commonly used to draw attention to important information or to gather input from users without navigating away from the current page.</p>
+        <div>
+            <p><br></p>
+            <h3>Example</h3>
+            <dialog id="myModal">
+                <h2>Dialog Title</h2>
+                <p>This is a simple dialog example.</p>
+                <p><br></p>
+                <button id="closeButton">Close</button>
+            </dialog>
+              <div>
+                    <p><br></p>
+                    <button id="openButton">Show Dialog</button>
+              </div>
+              
+        </div>
+        
+        </article>
+    </main>
+
+
+<div>
+    <p><br></p>
+    <p><br></p>    
+    <p><br></p>
+</div>
+<footer>
+    <section>
+        <main>&copy;2023 design & developed by grafx2print.com</div>
+    </section>
+</footer>
 </section>
 
+    <script>
+        const myDialog = document.getElementById('myModal');
+        const closeButton = document.getElementById('closeButton');
+        const openButton = document.getElementById('openButton');
 
+        closeButton.addEventListener('click', () => {
+            myDialog.close();
+        });
 
+        openButton.addEventListener('click', () => {
+            myDialog.showModal();  // This makes the dialog modal. If you use .show(), it won't be modal.
+        });
 
-<menu>&lt;menu&gt;</menu>
-<menuitem>&lt;menuitem&gt;</menuitem>
-
-<!-- Links -->
-<a href="#">&lt;a&gt;</a>
-<base>&lt;base&gt;</base>
-<link>&lt;link&gt;</link>
-
-<!-- Others -->
-<br>&lt;br&gt;
-<command>&lt;command&gt;</command>
-<data>&lt;data&gt;</data>
-<dialog>&lt;dialog&gt;</dialog>
-<hr>&lt;hr&gt;
-<meta>&lt;meta&gt;</meta>
-<wbr>&lt;wbr&gt;</wbr>
+    </script>
 
 </body>
 </html>
