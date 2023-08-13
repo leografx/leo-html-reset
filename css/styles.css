@@ -290,3 +290,21 @@ ul li, ol li {
 ul, ol {
     padding:1rem;
 }
+
+table {
+    font-size: .9rem;
+    width:100%;
+    border: 1px solid var(--light-grey);
+    padding: 1rem;
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: left;
+    padding:.6rem;
+    border: 1px solid var(--light-grey);
+}
+
+th{
+    color:var(--primary);
+}
