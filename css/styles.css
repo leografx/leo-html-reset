@@ -369,6 +369,12 @@ form label:has(input[type=radio]){
     grid-template-columns: 20px auto;
 }
 
+input[type=range] {
+    width:100%;
+    background: var(--primary);
+}
+
+
 @media only screen and (max-width : 960px) {
     main {
         width:100%;
