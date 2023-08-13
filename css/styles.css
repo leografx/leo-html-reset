@@ -277,3 +277,16 @@ select {
     border-color: var(--light-grey);
     background-color:#fff;
 }
+
+progress{
+    width:100%;
+    height: 1.5rem;
+}
+
+ul li, ol li {
+    line-height: 1.5rem;
+}
+
+ul, ol {
+    padding:1rem;
+}
